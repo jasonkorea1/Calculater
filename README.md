@@ -1,1 +1,200 @@
-# Calculater
+# equation Calculater
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+  <meta charset="utf-8">
+  <style>
+
+
+  </style>
+<!--
+-
+-
+-
+Accessing this website with scripts or programs is stricly prohibited.
+All violating IPs will be blacklisted.
+This document is protected by the copyright law.
+Modification, publishing and redistribution of this document are prohibited.
+-
+-
+-
+-->
+
+<meta property="og:image" content="https://www.numberempire.com/images/sharing-thumbnail.jpeg">
+<meta property="og:url" content="http://ko.numberempire.com/equationsolver.php">
+<meta property="og:title" content="방정식 풀이 프로그램">
+<meta property="og:description" content="방정식 풀이 프로그램">
+
+<meta name="keywords" content="방정식 풀이 시스템 온라인 솔루션">
+
+  <meta name="description" content="방정식 계산기는 주어진 방정식들에서 미지수의 값을 구합니다. 다항식과 지수, 대수 및 삼각함수를 지원합니다. 결과는 값 그대로 표현하거나 소수로 표현할 수 있습니다. 방정식의 해는 최대한 간단하게 나타내도록...">
+<style>body{margin-top:0;font-family:sans-serif;}td.b1{font-weight:bold;text-align:center;}td.b{font-weight:bold;text-align:right;padding-right:0.5em;}a.n{color:green;}a.r{color:blue;}a.ne{color:orange;}a.el{color:gray;font-size:x-small;}a.tex{font-size:small;font-family:arial, sans-serif;}a:hover{text-decoration:underline;}a{text-decoration:none;}.text{font-size:medium;}h1, h2, h3{margin:0.2em;}a.gl{color:gray;text-decoration:none}td.result{font-size:large;}#user_history{position:absolute;visibility:hidden;top:30px;right:20px;left:20px;background-color:#F0F0F0;border:1px solid #000;padding:10px;text-align:center;}img.control:hover{cursor:pointer;}a.author{color:gray;}a.menu{display:block;padding:5px;}.left{text-align:left;}.center{text-align:center;}table.center, div.center{margin:0 auto;}.right{text-align:right;}.justify{text-align:justify;}.wide{width:100%;}.right{float:right;}table.cellpadding3 td{padding:3px;}table.cellpadding10 td{padding:10px;}.gray{color:gray;}img{border:0;}table.border, table.border td{border:1px solid black;border-collapse:collapse;}.nowrap{white-space:nowrap;}.hidden{visibility:hidden;}.middle{vertical-align:middle;}table.main{max-width:1100px;width:100%;}input.full_width{width:80%;}input.full_width_60{width:60%;}input.full_width_60{width:40em;}input.full_width_20{width:20em;}div.full_width{width:80%;}.icon:hover{cursor:pointer;}.shadow{box-shadow:4px 4px 12px 2px #808080;margin:5px auto 12px auto;padding:4px;}input[type='number']{-moz-appearance:textfield;}input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{-webkit-appearance:none;}.perm_ad{padding:5px;}.table{display:table;}.section{padding:5px 0;}.warn{border-radius:25px;border:10px solid black;padding:20px;background-color:white;}@-webkit-keyframes blinker{from{opacity:1.0;}to{opacity:0.0;}}.blink{animation-name:blinker;animation-duration:0.75s;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-direction:alternate;animation-name:blinker;-moz-animation-duration:0.75s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:ease-in-out;-moz-animation-direction:alternate;-webkit-animation-name:blinker;-webkit-animation-duration:0.75s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;-webkit-animation-direction:alternate;}.opentip-container, .opentip-container *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}.opentip-container{position:absolute;max-width:300px;z-index:100;-webkit-transition:-webkit-transform 1s ease-in-out;-moz-transition:-moz-transform 1s ease-in-out;-o-transition:-o-transform 1s ease-in-out;-ms-transition:-ms-transform 1s ease-in-out;transition:transform 1s ease-in-out;pointer-events:none;-webkit-transform:translateX(0) translateY(0);-moz-transform:translateX(0) translateY(0);-o-transform:translateX(0) translateY(0);-ms-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0);}.opentip-container.fixed.hidden.stem-top.stem-center, .opentip-container.fixed.going-to-show.stem-top.stem-center, .opentip-container.fixed.hiding.stem-top.stem-center{-webkit-transform:translateY(-5px);-moz-transform:translateY(-5px);-o-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);}.opentip-container.fixed.hidden.stem-top.stem-right, .opentip-container.fixed.going-to-show.stem-top.stem-right, .opentip-container.fixed.hiding.stem-top.stem-right{-webkit-transform:translateY(-5px) translateX(5px);-moz-transform:translateY(-5px) translateX(5px);-o-transform:translateY(-5px) translateX(5px);-ms-transform:translateY(-5px) translateX(5px);transform:translateY(-5px) translateX(5px);}.opentip-container.fixed.hidden.stem-middle.stem-right, .opentip-container.fixed.going-to-show.stem-middle.stem-right, .opentip-container.fixed.hiding.stem-middle.stem-right{-webkit-transform:translateX(5px);-moz-transform:translateX(5px);-o-transform:translateX(5px);-ms-transform:translateX(5px);transform:translateX(5px);}.opentip-container.fixed.hidden.stem-bottom.stem-right, .opentip-container.fixed.going-to-show.stem-bottom.stem-right, .opentip-container.fixed.hiding.stem-bottom.stem-right{-webkit-transform:translateY(5px) translateX(5px);-moz-transform:translateY(5px) translateX(5px);-o-transform:translateY(5px) translateX(5px);-ms-transform:translateY(5px) translateX(5px);transform:translateY(5px) translateX(5px);}.opentip-container.fixed.hidden.stem-bottom.stem-center, .opentip-container.fixed.going-to-show.stem-bottom.stem-center, .opentip-container.fixed.hiding.stem-bottom.stem-center{-webkit-transform:translateY(5px);-moz-transform:translateY(5px);-o-transform:translateY(5px);-ms-transform:translateY(5px);transform:translateY(5px);}.opentip-container.fixed.hidden.stem-bottom.stem-left, .opentip-container.fixed.going-to-show.stem-bottom.stem-left, .opentip-container.fixed.hiding.stem-bottom.stem-left{-webkit-transform:translateY(5px) translateX(-5px);-moz-transform:translateY(5px) translateX(-5px);-o-transform:translateY(5px) translateX(-5px);-ms-transform:translateY(5px) translateX(-5px);transform:translateY(5px) translateX(-5px);}.opentip-container.fixed.hidden.stem-middle.stem-left, .opentip-container.fixed.going-to-show.stem-middle.stem-left, .opentip-container.fixed.hiding.stem-middle.stem-left{-webkit-transform:translateX(-5px);-moz-transform:translateX(-5px);-o-transform:translateX(-5px);-ms-transform:translateX(-5px);transform:translateX(-5px);}.opentip-container.fixed.hidden.stem-top.stem-left, .opentip-container.fixed.going-to-show.stem-top.stem-left, .opentip-container.fixed.hiding.stem-top.stem-left{-webkit-transform:translateY(-5px) translateX(-5px);-moz-transform:translateY(-5px) translateX(-5px);-o-transform:translateY(-5px) translateX(-5px);-ms-transform:translateY(-5px) translateX(-5px);transform:translateY(-5px) translateX(-5px);}.opentip-container.fixed{pointer-events:auto;}.opentip-container.hidden{display:none;}.opentip-container .opentip{position:relative;font-size:13px;line-height:120%;padding:9px 14px;color:#4f4b47;text-shadow:-1px -1px 0px rgba(255,255,255,0.2);}.opentip-container .opentip .header{margin:0;padding:0;}.opentip-container .opentip .close{pointer-events:auto;display:block;position:absolute;top:-12px;left:60px;color:rgba(0,0,0,0.5);background:rgba(0,0,0,0);text-decoration:none;}.opentip-container .opentip .close span{display:none;}.opentip-container .opentip .loading-indicator{display:none;}.opentip-container.loading .loading-indicator{display:block;}.opentip-container.style-dark .opentip, .opentip-container.style-alert .opentip{color:#f8f8f8;text-shadow:1px 1px 0px rgba(0,0,0,0.2);}.opentip-container.style-glass .opentip{padding:15px 25px;color:#317cc5;text-shadow:1px 1px 8px rgba(0,94,153,0.3);}.opentip-container.hide-effect-fade{-webkit-transition:-webkit-transform 0.5s ease-in-out, opacity 1s ease-in-out;-moz-transition:-moz-transform 0.5s ease-in-out, opacity 1s ease-in-out;-o-transition:-o-transform 0.5s ease-in-out, opacity 1s ease-in-out;-ms-transition:-ms-transform 0.5s ease-in-out, opacity 1s ease-in-out;transition:transform 0.5s ease-in-out, opacity 1s ease-in-out;opacity:1;-ms-filter:none;filter:none;}.opentip-container.hide-effect-fade.hiding{opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0);}.opentip-container.show-effect-appear.going-to-show, .opentip-container.show-effect-appear.showing{-webkit-transition:-webkit-transform 0.5s ease-in-out, opacity 1s ease-in-out;-moz-transition:-moz-transform 0.5s ease-in-out, opacity 1s ease-in-out;-o-transition:-o-transform 0.5s ease-in-out, opacity 1s ease-in-out;-ms-transition:-ms-transform 0.5s ease-in-out, opacity 1s ease-in-out;transition:transform 0.5s ease-in-out, opacity 1s ease-in-out;}.opentip-container.show-effect-appear.going-to-show{opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0);}.opentip-container.show-effect-appear.showing{opacity:1;-ms-filter:none;filter:none;}.opentip-container.show-effect-appear.visible{opacity:1;-ms-filter:none;filter:none;}</style>
+
+<link rel='alternate' hreflang='de' href='https://de.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='en' href='https://www.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='es' href='https://es.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='fr' href='https://fr.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='it' href='https://it.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='nl' href='https://nl.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='pl' href='https://pl.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='pt' href='https://pt.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='ru' href='https://ru.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='zh' href='https://zh.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='ja' href='https://ja.numberempire.com/equationsolver.php' />
+<link rel='alternate' hreflang='ko' href='https://ko.numberempire.com/equationsolver.php' />
+
+<title>방정식 계산기</title>
+
+<script>
+
+  var lang = 'ko';
+  var url = "https:\/\/ko.numberempire.com\/equationsolver.php";
+  var tr_parentheses_do_not_match = "\uad04\ud638\uac00 \uc62c\ubc14\ub974\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4";
+  var tr_empty_string = "\uacc4\uc0b0\ud560 \uc2dd\uc744 \uc785\ub825\ud558\uc138\uc694.";
+  var tr_function = "\ud568\uc218";
+  var tr_invalid_exp = "\uc798\ubabb\ub41c \ud45c\ud604";
+  var tr_not_recognized = "\uc774\ud574\ud558\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4. \ubb38\uc7a5\uc744 \ud655\uc778\ud574 \uc8fc\uc138\uc694.";
+  var tr_apply_diff_rule = "\ubbf8\ubd84";
+  var tr_simplify_exp = "\uc2dd \uc815\ub9ac \uc911";
+  var tr_final_simpl_canon = "\ucd5c\uc885 \ub2e8\uc21c\ud654 \ubc0f \uc815\uaddc\ud654";
+  var tr_disable_adblock = "\uad11\uace0 \ucc28\ub2e8 \uae30\ub2a5\uc744 \ud574\uc81c\ud574\uc8fc\uc138\uc694.";
+  var tr_loading_js = "\ub85c\ub529 \uc911...";
+	var tr_max_field_length_reached = "\ucd5c\ub300 \uae38\uc774\uc5d0 \ub3c4\ub2ec\ud588\uc2b5\ub2c8\ub2e4.";
+    var is_cookie_policy_required = true;
+
+  var tr_consent_header = "Notice";
+  var tr_consent_text = "<p>This website uses cookies to enable important site functionality including user preferences, statistics, targeting and personalization as outlined in  <a href='\/privacypolicy.php'>privacy policy<\/a>.<\/p><p>You accept use of cookies by closing or dismissing this notice or by clicking on a link or a button on the page.<\/p>";
+  var tr_accept = "Accept";
+  var tr_customize = "Customize";
+  var tr_necessary = "Necessary";
+  var tr_preferences = "Preferences";
+  var tr_statistics = "Statistics";
+  var tr_marketing = "Marketing";
+  var tr_withdraw_cookie_consent_confirmation = "Cookie consent was withdrawn. Click OK to reload the page.";
+
+
+  var ad_msgs = ["\uc548\ub155\ud558\uc138\uc694, \uad11\uace0\ub97c \ubcf4\uae30 \uc2eb\uc73c\uc2dc\uaca0\uc9c0\ub9cc \uc800\ud76c\ub294 \uad11\uace0 \uc5c6\uc774\ub294 \uc6b4\uc601\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4!","\uc774 \uc0ac\uc774\ud2b8\uac00 \uc720\uc6a9\ud558\uc600\ub2e4\uba74 \uc800\ud76c\uc5d0\uac8c \ub3c4\uc6c0\uc744 \uc8fc\uc138\uc694!","\uc548\ub155\ud558\uc138\uc694, \uc800\ud76c \uc6f9\uc0ac\uc774\ud2b8\ub294 \ud638\uc2a4\ud305 \ube44\uc6a9\uc744 \uc704\ud55c \uad11\uace0\uac00 \ud544\uc694\ud569\ub2c8\ub2e4.","\uace0\uac1d\ub2d8! \uc800\ud76c \uc6f9\uc0ac\uc774\ud2b8\ub294 \uad11\uace0 \uc5c6\uc774 \uc874\uc7ac\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4!"];
+
+  (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+
+  function checkInput(){};
+  function setInput(){};
+  function copyToClipboard(){};
+</script>
+
+</head>
+
+<body>
+<div id='translations'></div>
+<table class='center zero main' id='main'>
+<tr id='top_sandbar'><td  class='center'>
+<table class='zero wide'><tr>
+<td class='left' style='width: 85%'>
+
+    <span class='gray'>|</span>
+        >
+      <span class=gray>|</span>
+
+    		    <td class='right' style='width: 15%; min-width: 100px'>
+    <span title='Click to rate this page'><img id='star1' alt='1' src='/images/graystar.png' width='20' height='20'><img id='star2' alt='2' src='/images/graystar.png' width='20' height='20'><img id='star3' alt='3' src='/images/graystar.png' width='20' height='20'><img id='star4' alt='4' src='/images/graystar.png' width='20' height='20'><img id='star5' alt='5' src='/images/graystar.png' width='20' height='20'></span>
+<script>
+var tr_comment = "Would you like to write a comment?";
+</script>
+
+</td>
+</tr>
+</table></td></tr>
+
+<tr class='center'><td>
+	<div id='perm-ad'><div id='perm_ad'>
+<!-- NE-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7891406799955373"
+     data-ad-slot="1562322018"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>
+</td></tr>
+
+<tr><td  class='center' id='toplink'>
+
+</td></tr>
+
+
+
+<tr class='center'><td ><h1>방정식 풀이 프로그램</h1>
+</td></tr>
+<tr><td  class='center'>
+<form  name='form1' action='equationsolver.php' method='post'>
+<label>
+  연립방정식을 쓸 때는 각 식을 반점(,)으로 구분해주세요.:<br>
+  <input autofocus type='text' name='function' maxlength='240' value='' class='full_width' onchange='checkInput(this);' onkeyup='checkInput(this);'><br>
+</label>
+<label>
+  미지수: <input type='text' name='var' size='10' maxlength='40' value='x'>
+</label>
+<label>
+  표현법:
+  <select name="result_type">
+<option value="false" selected="selected">값 그대로 표현</option>
+<option value="true">소수로 변환</option>
+</select>
+
+</label>
+<input type='hidden' name='answers' value=''>
+<input type='submit' onclick='document.form1.answers.value="";document.form1.submit();' value='해 구하기'>
+</form>
+</td></tr>
+
+
+
+<tr><td class='center'>
+	<div class="full_width shadow justify table">
+  <strong>방정식 계산기는</strong> 주어진 방정식들에서 미지수의 값을 구합니다. 다항식과 지수, 대수 및 삼각함수를 지원합니다. 결과는 값 그대로 표현하거나 소수로 표현할 수 있습니다. 방정식의 해는 최대한 간단하게 나타내도록 하였기 때문에 기대한 꼴과 다른 꼴로 결과를 나타낼 수 있습니다. 또, 복소수가 포함된 방정식과 복소수 해, 복소수 미지수가 든 함수도 지원합니다.
+		<p id='ops_and_funs'>
+
+</p>
+
+	</div>
+</td></tr>
+
+	<tr class='center'><td>&nbsp;</td></tr>
+
+	
+
+
+<tr class='center'><td>
+	<!-- Number Empire -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7891406799955373"
+     data-ad-slot="5536397997"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</td></tr>
+
+
+<tr><td class='center'>
+<form action='.' method='post'>
+<h3>숫자 정보 검색하기</h3>
+<input type='number' min='1' max='1000000000000' name='n' placeholder='정수를 입력하세요.' title='정수를 입력하세요.' required class='full_width_60' style='text-align:center;'>
+<input type='submit' value='검색'>
+</form>
+<br>
+
+  </td></tr>
+</table>
+
+	</td></tr>
+
+
+
+
+
+</body>
+</html>
